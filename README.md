@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+# 🛒 E-Commerce Dashboard & Storefront
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive and modern React-based E-Commerce web application built with dynamic state management, catalog browsing, persistent cart capabilities, checkout workflows, and developer debugging tools.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- **🏠 Interactive Home & Landing**: Welcome hero section with quick navigation to featured products and promotions.
+- **📦 Product Catalog**: Grid layout of products with real-time stock status, pricing, ratings, and responsive image previews.
+- **🛍️ Cart Management**:
+  - Add to cart with quantity increments.
+  - Persistent state saved to `localStorage`.
+  - Item quantity modification & item removal.
+  - Dynamic order subtotal and item counter in header.
+- **💳 Checkout Flow**: Complete order placement form with customer input validation and instant order confirmation tracking.
+- **👤 Mock Authentication**: Seamless toggle between guest mode and logged-in user profile.
+- **🛡️ Error Handling**: React Error Boundaries and localized alert banners for network/order resilience.
+- **🛠️ Debug Panel**: Built-in developer telemetry panel displaying active page status, cart counter, and error states.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tech Stack
 
-### `npm test`
+- **Frontend**: [React 19](https://react.dev/)
+- **Styling**: [Bootstrap 5](https://getbootstrap.com/), Vanilla CSS, [Radium](https://github.com/FormidableLabs/radium)
+- **Routing**: [React Router](https://reactrouter.com/)
+- **HTTP Client**: [Axios](https://axios-http.com/)
+- **Testing**: React Testing Library & Jest
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📂 Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```text
+ecommerce-dashboard/
+├── public/                # Static assets & HTML template
+├── src/
+│   ├── components/        # Reusable UI components
+│   │   ├── Header.js
+│   │   ├── Navigation.js
+│   │   ├── ProductCard.js
+│   │   ├── ProductList.js
+│   │   ├── Cart.js
+│   │   ├── CartItem.js
+│   │   ├── CheckoutForm.js
+│   │   ├── DebugPanel.js
+│   │   └── ErrorBoundary.js
+│   ├── pages/             # Page views
+│   │   ├── Home.js
+│   │   ├── Products.js
+│   │   ├── Cart.js
+│   │   └── Checkout.js
+│   ├── styles/            # Custom styling & themes
+│   ├── utils/             # API mocks & helper functions
+│   ├── App.js             # Root application orchestrator
+│   └── index.js           # Entry point
+├── package.json
+└── README.md
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🏁 Getting Started
 
-### `npm run eject`
+### Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [Node.js](https://nodejs.org/) (version 16.x or newer recommended)
+- `npm` or `yarn`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/UmarM01/ecommerce-db.git
+   cd ecommerce-db
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-## Learn More
+3. Start the development server:
+   ```bash
+   npm start
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Open [http://localhost:3000](http://localhost:3000) to view the app in your browser.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🧪 Available Scripts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+| Command | Description |
+| :--- | :--- |
+| `npm start` | Runs the app in development mode with live reload. |
+| `npm test` | Launches the test runner in interactive watch mode. |
+| `npm run build` | Bundles the app for production in the `build/` folder. |
+| `npm run eject` | Ejects Create React App configuration (one-way operation). |
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📄 License
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is open source and available under the [MIT License](LICENSE).
